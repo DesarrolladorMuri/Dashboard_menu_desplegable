@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style/styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -13,44 +13,39 @@
     <title>Admin felipiyo</title>
   </head>
   <body>
+    <!-- contenido del menu desplegable -->
     <div class="container">
       <div class="sidebar">
         <ul>
           <li>
-            <a href="index.html">
+            <a href="#" class="sidebar-toggle">
+              <i class="fas fa-bars"></i>
+              <span>Administrator</span>
+            </a>
+          </li>
+          <li>
+            <a href="page/dashboard.html">
               <i class="fas fa-columns"></i>
               <div class="title">Dashboard</div>
             </a>
           </li>
-
+          <!-- subsitios del menu -->
           <li>
-            <a href="#">
+            <a href="page/profile.html">
               <i class="fas fa-user"></i>
               <div class="title">Profile</div>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="page/courses.html">
               <i class="fas fa-folder-open"></i>
               <div class="title">Courses</div>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fas fa-archive"></i>
-              <div class="title">Records</div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a href="page/messages.html">
               <i class="fas fa-envelope"></i>
               <div class="title">Messages</div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-cog"></i>
-              <div class="title">Settings</div>
             </a>
           </li>
         </ul>
@@ -108,7 +103,11 @@
           <div class="last-report">
             <div class="heading">
               <h2>Latest reports</h2>
-              <a href="#" class="btn">View All</a>
+              <div class="search">
+                <input type="text" name="search" placeholder="search here" />
+                <label for="search"><i class="fas fa-search"></i></label>
+              </div>
+              <a href="#" class="btn">Agregar</a>
             </div>
             <table class="report">
               <thead>
@@ -128,153 +127,13 @@
                     <i class="far fa-trash-alt"></i>
                   </td>
                 </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>stock Exchange</td>
-                  <td>loss of more than 50%</td>
-                  <td>asset</td>
-                  <td>
-                    <i class="far fa-eye"></i>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
           <div class="report-for-days">
             <div class="heading">
               <h2>Report for day</h2>
-              <a href="#" class="btn">View All</a>
+              <a href="#" class="btn">Agregar</a>
             </div>
             <table class="report-day">
               <thead>
@@ -288,56 +147,6 @@
                   <td>
                     <div class="img-box-small">
                       <img src="picture/profile.svg" alt="" />
-                    </div>
-                  </td>
-                  <td>stock Exchange</td>
-                  <td>23:00</td>
-                  <td><i class="far fa-eye"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="img-box-small">
-                      <img src="picture/profile1.svg" alt="" />
-                    </div>
-                  </td>
-                  <td>stock Exchange</td>
-                  <td>23:00</td>
-                  <td><i class="far fa-eye"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="img-box-small">
-                      <img src="picture/profile2.svg" alt="" />
-                    </div>
-                  </td>
-                  <td>stock Exchange</td>
-                  <td>23:00</td>
-                  <td><i class="far fa-eye"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="img-box-small">
-                      <img src="picture/profile3.svg" alt="" />
-                    </div>
-                  </td>
-                  <td>stock Exchange</td>
-                  <td>23:00</td>
-                  <td><i class="far fa-eye"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="img-box-small">
-                      <img src="picture/profile4.svg" alt="" />
-                    </div>
-                  </td>
-                  <td>stock Exchange</td>
-                  <td>23:00</td>
-                  <td><i class="far fa-eye"></i></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="img-box-small">
-                      <img src="picture/profile5.svg" alt="" />
                     </div>
                   </td>
                   <td>stock Exchange</td>
