@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/crud_edi.css">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Perfil de Usuario</h2>
+        <form>
+            <div class="profile-image">
+                <img src="user.jpg" alt="User Image">
+                <button class="edit-icon">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </div>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" value="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" value="john.doe@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Rol:</label>
+                <select id="role" name="role" required>
+                    <option value="admin">Administrador</option>
+                    <option value="user" selected>Usuario</option>
+                    <option value="manager">Gerente</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" value="12345" readonly>
+            </div>
+            <div class="form-group">
+                <label for="created-at">Creado en:</label>
+                <input type="text" id="created-at" name="created-at" value="2023-05-01" readonly>
+            </div>
+            <div class="btn-container">
+                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Agrega tu código JavaScript aquí -->
+    <script>
+        // Obtener el elemento de la imagen de perfil y el botón de edición
+        const profileImage = document.querySelector('.profile-image');
+        const editIcon = profileImage.querySelector('.edit-icon');
+
+        // Agregar un evento de clic al botón de edición
+        editIcon.addEventListener('click', () => {
+            // Abre un selector de archivos para que el usuario pueda seleccionar una imagen
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.onchange = (event) => {
+                // Actualizar la imagen de perfil con la nueva imagen seleccionada
+                const file = event.target.files[0];
+                const imageUrl = URL.createObjectURL(file);
+                profileImage.querySelector('img').src = imageUrl;
+            };
+            fileInput.click();
+        });
+    </script>
+</body>
+</html>
