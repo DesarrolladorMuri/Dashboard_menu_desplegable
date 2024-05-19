@@ -11,7 +11,7 @@
         <h2>Perfil de Usuario</h2>
         <form>
             <div class="profile-image">
-                <img src="user.jpg" alt="User Image">
+                <img src="../../picture/profile1.svg" alt="User Image">
                 <button class="edit-icon">
                     <i class="fas fa-edit"></i>
                 </button>
@@ -31,23 +31,13 @@
                     <option value="user" selected>Usuario</option>
                     <option value="manager">Gerente</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <label for="id">ID:</label>
-                <input type="text" id="id" name="id" value="12345" readonly>
-            </div>
-            <div class="form-group">
-                <label for="created-at">Creado en:</label>
-                <input type="text" id="created-at" name="created-at" value="2023-05-01" readonly>
-            </div>
             <div class="btn-container">
                 <button type="button" class="btn btn-primary">Guardar</button>
                 <button type="button" class="btn btn-danger">Eliminar</button>
+                <button type="button" class="btn btn-primary">Regresar</button>
             </div>
         </form>
     </div>
-
-    <!-- Agrega tu código JavaScript aquí -->
     <script>
         // Obtener el elemento de la imagen de perfil y el botón de edición
         const profileImage = document.querySelector('.profile-image');

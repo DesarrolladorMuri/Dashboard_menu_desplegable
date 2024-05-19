@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/profile.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Contenido del menú desplegable y barra de navegación -->
     <div class="container">
-        <div class="sidebar">
-            <!-- Encabezado del menú -->
-            <ul>
-                <li>
-                    <a href="#" class="sidebar-toggle">
-                        <i class="fas fa-bars"></i>
-                        <span>Administrator</span>
-                    </a>
-                </li>
-                <!-- Subsitios del menú -->
-                <li>
-                    <a href="dashboard.html">
-                        <i class="fas fa-columns"></i>
-                        <div class="title">Dashboard</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html">
-                        <i class="fas fa-user"></i>
-                        <div class="title">Profile</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="courses.html">
-                        <i class="fas fa-folder-open"></i>
-                        <div class="title">Courses</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="messages.html">
-                        <i class="fas fa-envelope"></i>
-                        <div class="title">Messages</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main">
-            <div class="top-bar">
-                <div class="search">
-                    <input type="text" name="search" placeholder="search here" />
-                    <label for="search"><i class="fas fa-search"></i></label>
-                </div>
-                <!-- Imagen de la barra de navegación -->
-                <i class="fas fa-bell"></i>
-                <div class="user">
-                    <img src="../picture/profile.svg" alt="" />
-                </div>
-            </div>
+      <div class="sidebar">
+        <!-- Encabezado del menú -->
+        <ul>
+          <li>
+            <a href="#" class="sidebar-toggle">
+              <i class="fas fa-bars"></i>
+              <span>Administrator</span>
+            </a>
+          </li>
+          <!-- Subsitios del menú -->
+          <li>
+            <a href="dashboard.html">
+              <i class="fas fa-columns"></i>
+              <div class="title">Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fas fa-user"></i>
+              <div class="title">Profile</div>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fas fa-folder-open"></i>
+              <div class="title">Courses</div>
+            </a>
+          </li>
+          <li>
+            <a href="messages.html">
+              <i class="fas fa-envelope"></i>
+              <div class="title">Messages</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="top-bar">
+          <div class="search">
+            <input type="text" name="search" placeholder="search here" />
+            <label for="search"><i class="fas fa-search"></i></label>
+          </div>
+          <!-- Imagen de la barra de navegación -->
+          <i class="fas fa-bell"></i>
+          <div class="user">
+            <img src="../picture/profile.svg" alt="" />
+          </div>
         </div>
 
         <!-- secciòn de perfil -->
-        <div class="profile-section">
-            <div class="profile-info">
-                <div class="profile-image">
-                    <img src="user.jpg" alt="User Image">
-                </div>
-                <div class="profile-details">
-                    <h2>Felipe_carvajal</h2>
-                    <p>Felipe_carvajal@example.com</p>
-                    <p>Admin</p>
-                </div>
+        <div class="cv-container">
+            <div class="profile-image">
+                <img src="../picture/profile.svg" alt="User Image">
             </div>
-            <button class="edit-button">Edit</button>
+          <div class="profile-details">
+            <h2>Felipe Carvajal</h2>
+            <p>Felipe_carvajal@example.com</p>
+            <p>Gerente de Desarrollo</p>
+          </div>
+          <a href="sub page/crud_edit.html" class="edit-button">Editar</a>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
