@@ -9,16 +9,18 @@ body {
   overflow-x: hidden;
 }
 
+/* estilos del contenedor */
 .container {
   position: absolute;
   width: 100%;
 }
 
+/* estilos del contenedor o div .sidebar */
 .sidebar {
   position: fixed;
   width: 300px;
   height: 100%;
-  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  background: linear-gradient(45deg, #45c4b7, #2e3e4e);
   overflow-x: hidden;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 2;
@@ -65,6 +67,7 @@ span {
   font-size: 20px;
 }
 
+/* estilos del cuerpo de los elementos */
 .main {
   position: absolute;
   width: calc(100% - 300px);
@@ -73,6 +76,7 @@ span {
   background: #f5f5f5;
 }
 
+/* estilos para la barra de navegación */
 .top-bar {
   position: fixed;
   height: 60px;
@@ -87,11 +91,14 @@ span {
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+
 .top-bar .search {
   position: relative;
   max-width: 400px;
 }
 
+/* estilos para el icono y todo lo relacionado con el usuario */
 .user {
   position: relative;
   width: 50px;
@@ -125,6 +132,119 @@ img {
   top: 10px;
   cursor: pointer;
 }
+
+/* estilo para las tablas */
+.tables {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  align-items: self-start;
+  padding: 85px 20px 20px 20px;
+}
+
+
+/* estilos de la tabla que continen los reportes */
+.last-report {
+  min-height: 570px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+
+/* estilo para todos los estilos de los encabezados */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+}
+.heading .search,
+.top-bar .search {
+  position: relative;
+  max-width: 400px;
+}
+
+.search input,
+.top-bar .search {
+  width: 100%;
+  min-width: 128px;
+  height: 40px;
+  padding: 0 40px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: #f5f5f5;
+}
+
+/* estilo par alos buscadores */
+.search i {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* esttilos para el boton agregar, el cual esta en formato link */
+.btn {
+  padding: 5px 10px;
+  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* margenes de las tablas */
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead td {
+  font-weight: 600;
+  color: #333;
+}
+
+table tr {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+tbody tr:hover {
+  background: #444;
+  color: #fff;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 9px 5px;
+}
+
+td i {
+  padding: 7px;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.last-report table tbody td:last-child {
+  white-space: nowrap;
+}
+
+.fa-eye {
+  background: #32bea6;
+}
+
+.fa-trash-alt {
+  background: #ed5564;
+}
+
 
 @media (max-width: 1090px) {
   .sidebar {

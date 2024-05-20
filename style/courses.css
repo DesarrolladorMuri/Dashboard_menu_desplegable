@@ -18,7 +18,7 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  background: linear-gradient(45deg, #45c4b7, #2e3e4e);
   overflow-x: hidden;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 2;
@@ -171,7 +171,7 @@ span {
 
 .card .card-btn {
   display: block;
-  background-color: #47cebe;
+  background-color: #2e3e4e;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;

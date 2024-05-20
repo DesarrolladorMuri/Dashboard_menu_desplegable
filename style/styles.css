@@ -21,7 +21,7 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  background: linear-gradient(45deg, #45c4b7, #2e3e4e);
   overflow-x: hidden;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 2;
@@ -120,7 +120,7 @@ img {
 }
 
 .cards .card {
-  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  background: linear-gradient(45deg, #45c4b7, #2e3e4e);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -135,14 +135,14 @@ img {
 }
 
 .card-name {
-  color: #444;
+  color: #fff;
   font-weight: 600;
 }
 
 /* estilo para los iconos de la segunda tarjeta */
 .icon-box i {
   font-size: 45px;
-  color: #444;
+  color: #fff;
 }
 
 /* estilo para las tablas */
@@ -213,7 +213,7 @@ img {
 /* esttilos para el boton agregar, el cual esta en formato link */
 .btn {
   padding: 5px 10px;
-  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  background: linear-gradient(45deg, #45c4b7, #2e3e4e);
   color: #fff;
   text-decoration: none;
   text-align: center;
