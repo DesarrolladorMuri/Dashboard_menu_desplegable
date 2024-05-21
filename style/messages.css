@@ -260,31 +260,24 @@ td i {
 }
 
 @media (max-width: 860px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .tables {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 530px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
   .last-report td:nth-child(3) {
     display: none;
   }
 }
 
 @media (max-width: 420px) {
-  .last-report,
-  .report-for-days {
+  .last-report{
     font-size: 70%;
-    padding: 10px;
+    padding-top: 60px;
     min-height: 200px;
   }
-  .cards,
+
   .tables {
     padding: 10px;
   }

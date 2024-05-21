@@ -114,6 +114,10 @@ body {
   background-color: #f44336;
 }
 
+.btn-secondary{
+  background-color: #0e0eec;
+}
+
 @media (max-width: 767px) {
   .form-container {
     padding: 20px;

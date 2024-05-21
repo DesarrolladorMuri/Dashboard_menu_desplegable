@@ -13,7 +13,6 @@
     <title>Profile</title>
   </head>
   <body>
-    <!-- Contenido del menú desplegable y barra de navegación -->
     <div class="container">
       <div class="sidebar">
         <!-- Encabezado del menú -->
@@ -57,24 +56,28 @@
             <input type="text" name="search" placeholder="search here" />
             <label for="search"><i class="fas fa-search"></i></label>
           </div>
-          <!-- Imagen de la barra de navegación -->
           <i class="fas fa-bell"></i>
           <div class="user">
             <img src="../picture/profile.svg" alt="" />
           </div>
         </div>
-
-        <!-- secciòn de perfil -->
-        <div class="cv-container">
-          <div class="profile-image">
-            <img src="../picture/profile.svg" alt="User Image" />
+        <div class="profile-container">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="../picture/profile.svg" alt="photo the profile">
+            </div>
+            <div class="profile-info">
+              <h2>Felipe carvajal</h2>
+              <p><b>Email:</b> john.doe@example.com</p>
+              <p><b>Profession:</b> Designer</p>
+              <p><b>Campus:</b> SENA Vereda</p>
+              <p><b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed ac sem augue.</p>
+              </div>
+            <div class="edit-button">
+              <a href="sub page/crud_edit.html" class="btn">Editar</a>
+            </div>
           </div>
-          <div class="profile-details">
-            <h2>Felipe Carvajal</h2>
-            <p>Felipe_carvajal@example.com</p>
-            <p>Gerente de Desarrollo</p>
-          </div>
-          <a href="sub page/crud_edit.html" class="edit-button">Editar</a>
         </div>
       </div>
     </div>

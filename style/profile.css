@@ -98,7 +98,7 @@ span {
   height: 50px;
 }
 
-img {
+.user img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -126,28 +126,33 @@ img {
   cursor: pointer;
 }
 
-.cv-container {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.1);
-  width: calc(100% - 100px);
-  min-width: 900px;
-  margin: 40px auto;
+/* Estilos para el apartado de perfil */
+.profile-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 85px 20px 20px 20px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
   align-items: center;
-  margin-top: 85px;
-  height: 550px;
+  max-width: calc(1300px - 300px);
+  width: 100%;
+  position: relative;
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin: 0 auto 20px;
   overflow: hidden;
-  position: relative;
+  margin-right: 20px;
 }
 
 .profile-image img {
@@ -156,36 +161,40 @@ img {
   object-fit: cover;
 }
 
-.profile-datails {
-  text-align: center;
-  margin-bottom: 30px;
+.profile-info {
+  flex-grow: 1;
 }
 
-.profile-datails h2 {
-  font-size: 28px;
+.profile-info h2 {
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
-.profile-datails p {
+.profile-info p {
   font-size: 16px;
-  color: #666;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .edit-button {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+  bottom: 20px;
+  right: 20px;
+}
+
+.edit-button .btn {
   display: inline-block;
-  font-size: 16px;
+  background-color: #45c4b7;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 4px;
-  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button .btn:hover {
+  background-color: #2e3e4e;
 }
 
 @media (max-width: 1090px) {
@@ -201,40 +210,48 @@ img {
   }
 }
 
-@media (max-width: 860px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .tables {
-    grid-template-columns: 1fr;
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .edit-button {
+    position: static;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 530px) {
-  .cards {
-    grid-template-columns: 1fr;
+  .profile-container {
+    padding: 10px;
   }
-  .last-report td:nth-child(3) {
-    display: none;
-  }
-}
 
-@media (max-width: 420px) {
-  .last-report,
-  .report-for-days {
-    font-size: 70%;
-    padding: 10px;
-    min-height: 200px;
+  .profile-card {
+    padding-top: 75px;
   }
-  .cards,
-  .tables {
-    padding: 10px;
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
   }
-  .search input {
-    padding: 0 10px;
+
+  .profile-info h2 {
+    font-size: 20px;
   }
-  .user {
-    width: 40px;
-    height: 40px;
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .edit-button .btn {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
