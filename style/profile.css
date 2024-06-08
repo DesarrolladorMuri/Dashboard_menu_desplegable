@@ -1,3 +1,4 @@
+/* Reset y estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +10,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Contenedor principal */
 .container {
   position: absolute;
   width: 100%;
 }
 
+/* Barra lateral */
 .sidebar {
   position: fixed;
   width: 300px;
@@ -65,6 +68,7 @@ span {
   font-size: 20px;
 }
 
+/* Contenido principal */
 .main {
   position: absolute;
   width: calc(100% - 300px);
@@ -73,6 +77,7 @@ span {
   background: #f5f5f5;
 }
 
+/* Barra de navegación superior */
 .top-bar {
   position: fixed;
   height: 60px;
@@ -87,7 +92,23 @@ span {
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 1;
 }
-.nav-bar{
+
+.top-bar .sidebar-toggle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #45c4b7;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nav-bar {
   padding: 20px;
   font-family: sans-serif;
   text-align: left;
@@ -139,6 +160,7 @@ span {
 .profile-card {
   background: #fff;
   padding: 20px;
+  margin: 10px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   border-radius: 8px;
   display: flex;
@@ -165,6 +187,9 @@ span {
 
 .profile-info {
   flex-grow: 1;
+  overflow-y: auto;
+  max-height: 500px;
+  padding-right: 20px;
 }
 
 .profile-info h2 {
@@ -199,7 +224,9 @@ span {
   background-color: #2e3e4e;
 }
 
+/* Estilos responsivos */
 @media (max-width: 1090px) {
+  /* Estilos para pantallas de hasta 1090px de ancho */
   .sidebar {
     width: 60px;
   }
@@ -213,6 +240,7 @@ span {
 }
 
 @media (max-width: 768px) {
+  /* Estilos para pantallas de hasta 768px de ancho */
   .profile-card {
     flex-direction: column;
     align-items: center;
@@ -224,24 +252,35 @@ span {
     margin-bottom: 20px;
   }
 
+  .profile-info {
+    max-height: 400px;
+  }
+
   .edit-button {
     position: static;
     margin-top: 20px;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 500px) {
+  /* Estilos para pantallas de hasta 500px de ancho */
   .profile-container {
-    padding: 10px;
+    padding: 75px 10px 10px 10px;
   }
 
   .profile-card {
-    padding-top: 75px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .profile-image {
     width: 120px;
     height: 120px;
+  }
+
+  .profile-info {
+    max-height: 300px;
+    padding-right: 10px;
   }
 
   .profile-info h2 {
@@ -253,7 +292,6 @@ span {
   }
 
   .edit-button .btn {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 10px 18px;
   }
 }
