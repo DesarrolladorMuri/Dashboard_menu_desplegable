@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-/* estilos del contenedor o div .sidebar */
+/* Barra lateral */
 .sidebar {
   position: fixed;
   width: 300px;
@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
   z-index: 2;
+  transition: all 0.3s ease; /* Agregar transición suave */
+}
+
+.sidebar.active {
+  width: 80px; /* Reducir el ancho cuando se contrae el menú */
 }
 
 .sidebar ul li {
@@ -54,6 +59,11 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease; /* Agregar transición suave */
+}
+
+.sidebar.active ul li a {
+  padding-left: 12px; /* Ajustar el padding cuando se contrae el menú */
 }
 
 .sidebar ul li a i {
@@ -63,9 +73,15 @@ body {
 }
 
 .sidebar .title,
-span {
+.sidebar span {
   padding: 0 10px;
   font-size: 20px;
+  transition: all 0.3s ease; /* Agregar transición suave */
+}
+
+.sidebar.active .title,
+.sidebar.active span {
+  display: none; /* Ocultar el título y el nombre de usuario cuando se contrae el menú */
 }
 
 /* estilos del cuerpo de los elementos */

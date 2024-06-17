@@ -1,12 +1,14 @@
-// Selecciona los elementos necesarios
-const sidebar = document.querySelector('.sidebar');
+// Seleccionar el elemento con la clase "sidebar-toggle"
 const sidebarToggle = document.querySelector('.sidebar-toggle');
-const main = document.querySelector('.main');
-const overlay = document.querySelector('.overlay');
+// Seleccionar el elemento con la clase "sidebar"
+const sidebar = document.querySelector('.sidebar');
+// Seleccionar el elemento con la clase "main"
+// const main = document.querySelector('.main');
 
-// Agrega un evento de clic al botón del menú
+// Agregar un evento de clic al elemento con la clase "sidebar-toggle"
 sidebarToggle.addEventListener('click', () => {
+  // Alternar la clase "active" en el elemento con la clase "sidebar"
   sidebar.classList.toggle('active');
-  main.classList.toggle('active');
-  overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
+  // Alternar la clase "overlay" en el elemento con la clase "main"
+  // main.classList.toggle('overlay');
 });
