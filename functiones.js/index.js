@@ -1,14 +1,27 @@
-// Seleccionar el elemento con la clase "sidebar-toggle"
-const sidebarToggle = document.querySelector('.sidebar-toggle');
-// Seleccionar el elemento con la clase "sidebar"
-const sidebar = document.querySelector('.sidebar');
-// Seleccionar el elemento con la clase "main"
-// const main = document.querySelector('.main');
+function toggleResponsiveMenu() {
+  // Obtener el elemento del menú de navegación
+  const sidebarMenu = document.querySelector('.sidebar');
 
-// Agregar un evento de clic al elemento con la clase "sidebar-toggle"
-sidebarToggle.addEventListener('click', () => {
-  // Alternar la clase "active" en el elemento con la clase "sidebar"
-  sidebar.classList.toggle('active');
-  // Alternar la clase "overlay" en el elemento con la clase "main"
-  // main.classList.toggle('overlay');
-});
+  // Obtener el elemento del ícono de hamburguesa
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+
+  // Obtener el ancho de la pantalla
+  const screenWidth = window.innerWidth;
+
+  // Verificar si la pantalla es responsiva
+  if (screenWidth <= 1090) {
+    // Alternar el estado del menú
+    sidebarMenu.classList.toggle('active');
+    sidebarToggle.classList.toggle('open');
+
+    // Aplicar el ancho del menú extendido o el ancho original
+    if (sidebarMenu.classList.contains('active')) {
+      sidebarMenu.style.width = '60px';
+    } else {
+      sidebarMenu.style.width = '300px';
+    }
+  }
+}
+
+// Agregar un evento de clic al ícono de hamburguesa
+document.querySelector('.sidebar-toggle').addEventListener('click', toggleResponsiveMenu);
